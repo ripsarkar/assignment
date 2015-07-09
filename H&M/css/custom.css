@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: Glyphicons Halflings;
+    src: url(fonts/glyphicons-halflings-regular.woff);
+}
+.sortlist{
+	position:absolute;
+	float:left;
+	border:1px solid #ccc;
+	background-color:#FFF;
+	z-index:999;
+	width:42.5%;
+	margin-top:15px;
+	box-shadow:2px 2px 2px #ddd;
+}
+.sortlist select{
+	width:100%;
+}
+.sortlist select option{
+	border-bottom:1px solid #ccc;
+	padding:10px;
+	cursor:pointer;
+}
+.searchItem{
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid #aaa;
+	height:500px;
+	margin-top:100px;
+	width:65%;
+}
+.searchItemContent{
+	width:76%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.inputField input{
+	width:100%;
+	border-radius:0px;
+	border-color:#333;
+	height:40px;
+}
+.inputFieldHeading{
+	width:100%;
+	border:2px solid #000;
+	border-radius:5px;
+	text-align:center;
+	vertical-align:middle;
+	padding:25px 0px;
+	margin:79px 0px 42px;
+	font-size:24px;
+	background-color:#FFF;
+}
+
+.selectedlist{
+	margin-top:47px;
+	max-height:170px;
+	overflow-y:scroll;
+	display:none;
+	width: 85%;
+  	margin-left: auto;
+  	margin-right: auto;
+	font-size:24px;
+}
+.selectedlist ul{
+	padding-left:0px;
+}
+.selectedlist ul li{
+	list-style:none;
+	padding:10px 10px;
+	border:1px solid #000;
+	border-radius:5px;
+	background-color:#eee;
+	margin-bottom:10px;
+	width:100%;
+	
+}
+.selectedlist ul li:before {
+  	content: "\e089";
+	font-family:"Glyphicons Halflings";
+	position: relative;
+  	top: 4px;
+	padding: 0 5px;
+}

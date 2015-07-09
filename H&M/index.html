@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
+</head>
+
+<body ng-app="templateSearch" ng-controller="searchController">
+<div class="container">
+<div class="row">
+
+<div class="searchItem">
+<div class="searchItemContent">
+<div class="inputFieldHeading">Ripunjoy Search App</div>
+<div class="inputField">
+<form class="bs-example bs-example-form form" data-example-id="input-group-with-button">
+    <div class="row-fluid">
+          <input type="text" class="form-control searchField" placeholder="Search for..." ng-model="searchInput">
+        <div ng-show="searchInput" class="list-group sortlist"><select class="filterList"  multiple="multiple"><option data-id='searchResults.Name' ng-repeat="searchResults in searchAccounts | filter:searchInput" ng-click="selectList($event)">{{searchResults.Name}}</option></select></div>
+    </div><!-- /.row -->
+  </form>
+</div>
+<div class="clearfix"></div>
+<div class="selectedlist"><ul></ul></div>
+</div>
+</div>
+  
+  
+  </div>
+  </div>  
+      <script src="js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="js/angular.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
